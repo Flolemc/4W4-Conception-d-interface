@@ -371,7 +371,7 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #923535;
+  color: #a06464;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -406,6 +406,18 @@ a:hover, a:active {
   outline: 0;
 }
 
+.formation {
+  background-color: #eca7a7;
+  color: #443936;
+  box-shadow: 3px 3px 5px #594036;
+}
+
+.formation__cours {
+  background-color: #ffd6d1;
+  color: #443936;
+  box-shadow: 3px 3px 5px #594036;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -423,12 +435,10 @@ COMPOSANTES
   padding: 10px 15px;
   background-color: #eca7a7;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -439,8 +449,6 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
-  box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -546,6 +554,10 @@ COMPOSANTES
 .site__header__menu__ul {
   margin: 0;
   padding: 0;
+}
+
+.site__header__menu__ul li:nth-child(2) {
+  margin-bottom: 5px;
 }
 
 .site__header__menu__ul a {

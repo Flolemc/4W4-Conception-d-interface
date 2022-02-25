@@ -26,6 +26,9 @@
 .site__header__menu__ul{
     margin:0;
     padding : 0;
+    li:nth-child(2){
+        margin-bottom: 5px;
+    }
     a{
         display : block;
         text-decoration: none;

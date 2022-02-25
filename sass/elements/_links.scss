@@ -43,3 +43,23 @@ a {
 					$color__link__header-hover );
 }
 
+@mixin boite(	$couleur-background,
+				$couleur-texte,
+				$couleur-shadow) 
+{
+	background-color: $couleur-background;
+	color : $couleur-texte;
+	box-shadow: 3px 3px 5px $couleur-shadow;
+}
+
+.formation {
+	@include boite(	$color__background-main,
+					$color__font-main,
+					$color__background-header)
+}
+
+.formation__cours {
+	@include boite(	$color__background-cours, 
+					$color__font-main, 
+					$color__background-header)
+}
