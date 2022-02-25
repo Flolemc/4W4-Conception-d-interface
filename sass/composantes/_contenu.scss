@@ -1,5 +1,5 @@
 .site__main {
-    
+    margin-right: 10px;
     padding: 10px 15px;
     background-color: $color__background-main;
     border-radius: 5px;
@@ -9,6 +9,10 @@
 .formation {
     display: flex;
     flex-direction: column;
+    padding: 10px 15px;
+    background-color: $color__background-main;
+    border-radius: 5px;
+    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 
     &__titre {
         font-size: 2rem;
@@ -41,10 +45,6 @@
 
 }
 
-
-
-
-
 .cours__titre {
     font-size: 1.5rem;
     color: $color__font-main;
@@ -59,4 +59,11 @@
 
 .cours__description {
     font-size: 1rem;
+}
+
+.nouveau__cours {
+    padding: 10px 15px;
+    background-color: $color__background-cours;
+    border-radius: 5px;
+    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 }

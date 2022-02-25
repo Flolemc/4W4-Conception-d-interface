@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-theme name: groupe__3 eddy martin
-Author: Eddy martin
-Author URI: https://github.com/eddytuto
+theme name: Ex2 : Florence Lemieux Cayer
+Author: Florence Lemieux Cayer
+Author URI: 
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -410,6 +410,7 @@ a:hover, a:active {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
+  margin-right: 10px;
   padding: 10px 15px;
   background-color: #eca7a7;
   border-radius: 5px;
@@ -419,6 +420,10 @@ COMPOSANTES
 .formation {
   display: flex;
   flex-direction: column;
+  padding: 10px 15px;
+  background-color: #eca7a7;
+  border-radius: 5px;
+  box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation__titre {
@@ -472,12 +477,22 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.nouveau__cours {
+  padding: 10px 15px;
+  background-color: #ffd6d1;
+  border-radius: 5px;
+  box-shadow: #39443e 1px -1px 10px;
+}
+
 .site__header {
   display: flex;
   align-items: center;
   background-color: #594036;
   color: #fa9292;
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-bottom: solid 5px #ffd6d1;
+  box-shadow: 3px 0px 5px black;
 }
 
 .site__header .header__titre {
@@ -494,11 +509,6 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   margin-left: auto;
-}
-
-.util .recherche {
-  background-color: #ffa3a3;
-  padding: 2px;
 }
 
 .util__lien {
@@ -631,7 +641,8 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #1161f7;
+  background-color: #594036;
+  box-shadow: 3px 3px 5px black;
   color: #fff;
   font-size: 3rem;
   animation: anim-entete 1s forwards;
