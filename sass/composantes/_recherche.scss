@@ -1,0 +1,14 @@
+.recherche {
+    background-color: $color__background-link;
+    padding: 2px;
+    display: flex;
+    &__input {
+      height: 30px;
+    }
+    &__bouton {
+      margin: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
