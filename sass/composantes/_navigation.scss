@@ -11,21 +11,19 @@
 #chk-burger:checked ~ #burger {
     transform : rotate(90deg);
 }
-.menu-principal-container {
+.site__header__menu {
     display : none;
 }
-#chk-burger:checked ~ .menu-principal-container{
+#chk-burger:checked ~ .site__header__menu{
     display : block;
 }
 
-
-.menu-principal-container{}
 .menu{
     list-style-type: none;
     margin : 0;
     padding :0;
 }
-.menu-item{
+.site__header__menu__ul{
     margin:0;
     padding : 0;
     a{
@@ -43,7 +41,7 @@
     #burger {
         display : none;
     }
-    .menu-principal-container {
+    .site__header__menu {
         display : block;
     }
 
