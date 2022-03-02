@@ -662,12 +662,36 @@ ANIMATION
   align-items: center;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 20%;
   background-color: #594036;
   box-shadow: 3px 3px 5px black;
   color: #fff;
   font-size: 3rem;
+}
+
+.animation__bloc:nth-child(1) {
   animation: anim-entete 1s forwards;
+  animation-delay: 0s;
+}
+
+.animation__bloc:nth-child(2) {
+  animation: anim-entete 1s forwards;
+  animation-delay: 0.1s;
+}
+
+.animation__bloc:nth-child(3) {
+  animation: anim-entete 1s forwards;
+  animation-delay: 0.2s;
+}
+
+.animation__bloc:nth-child(4) {
+  animation: anim-entete 1s forwards;
+  animation-delay: 0.3s;
+}
+
+.animation__bloc:nth-child(5) {
+  animation: anim-entete 1s forwards;
+  animation-delay: 0.4s;
 }
 
 @keyframes anim-entete {
