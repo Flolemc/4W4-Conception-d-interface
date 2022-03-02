@@ -21,7 +21,9 @@
 .util {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
   margin-left: auto;
+  margin-bottom: 25px;
   &__lien {
     display: flex;
   }

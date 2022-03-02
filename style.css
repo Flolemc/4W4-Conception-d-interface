@@ -528,7 +528,9 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
   margin-left: auto;
+  margin-bottom: 25px;
 }
 
 .util__lien {
