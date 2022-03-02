@@ -602,7 +602,6 @@ COMPOSANTES
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
-  justify-content: center;
 }
 
 .site__footer__menu__ul .menu-item {
@@ -611,7 +610,6 @@ COMPOSANTES
 
 .site__footer__menu__ul .menu-item a {
   display: flex;
-  align-items: center;
   padding: 3px;
 }
 
@@ -627,7 +625,6 @@ COMPOSANTES
 .footer__presentation,
 .footer__author {
   color: #ffcabc;
-  text-align: center;
 }
 
 .cours__contenu {
