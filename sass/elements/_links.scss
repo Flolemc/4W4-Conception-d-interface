@@ -63,3 +63,9 @@ a {
 					$color__font-main, 
 					$color__background-header)
 }
+
+.cours {
+	@include boite(	$color__background-cours, 
+					$color__font-main, 
+					$color__background-header)
+}

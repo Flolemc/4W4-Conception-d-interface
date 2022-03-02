@@ -418,6 +418,12 @@ a:hover, a:active {
   box-shadow: 3px 3px 5px #594036;
 }
 
+.cours {
+  background-color: #ffd6d1;
+  color: #443936;
+  box-shadow: 3px 3px 5px #594036;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -467,6 +473,12 @@ COMPOSANTES
   .formation__cours {
     width: 30%;
   }
+}
+
+.cours {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .cours__titre {
@@ -525,6 +537,7 @@ COMPOSANTES
 
 #burger {
   position: absolute;
+  padding: 12px 5px;
   transition: transform .3s;
   transform: rotate(0);
 }
