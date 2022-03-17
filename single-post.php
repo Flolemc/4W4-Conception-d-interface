@@ -6,7 +6,6 @@
                     <?php echo get_the_title(); ?>
                </h1>
                <section class="cours__contenu">
-                    <?php the_post_thumbnail('thumbnail');?>
                     <?php the_content(); ?>
                </section>
           </article>

@@ -1,9 +1,9 @@
 .site__main {
-    margin-right: 10px;
-    padding: 10px 15px;
     background-color: $color__background-main;
-    border-radius: 5px;
     box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
 }
 
 .formation {
@@ -61,16 +61,58 @@
     font-size: 1rem;
 }
 
+.cours__contenu{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 100%;
+        height: fit-content;
+    }
+}
+
 .description__accueil {
-    margin-top: 1rem;
-    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
     background-color: $color__background-cours;
-    border-radius: 5px;
     box-shadow: rgb(57, 68, 62) 1px -1px 10px;
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        padding: 10px;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (min-width : $largeur__media--tablette){
+    .site__main {
+        margin-right: 10px;
+        padding: 10px 15px;
+        background-color: $color__background-main;
+        border-radius: 5px;
+        box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .description__accueil {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        padding: 10px 15px;
+        background-color: $color__background-cours;
+        border-radius: 5px;
+        box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+        h2 {
+            font-size: 2rem;
+            padding: 0;
+        }
+        p {
+            font-size: 1.5rem;
+            padding: 0;
+        }
     }
 }

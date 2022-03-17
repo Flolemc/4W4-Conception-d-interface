@@ -17,6 +17,7 @@
 <header class="site__header">
     <div class="header__texte">
     <h1 class="header__titre">
+        <?= get_custom_logo(); ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
             <?php bloginfo('name'); ?></h1>
         </a>

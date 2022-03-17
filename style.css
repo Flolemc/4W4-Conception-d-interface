@@ -428,11 +428,11 @@ a:hover, a:active {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
-  margin-right: 10px;
-  padding: 10px 15px;
   background-color: #CB997E;
-  border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .formation {
@@ -497,20 +497,61 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.cours__contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.cours__contenu img {
+  width: 100%;
+  height: fit-content;
+}
+
 .description__accueil {
-  margin-top: 1rem;
-  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
   background-color: #DDBEA9;
-  border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .description__accueil h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 10px;
 }
 
 .description__accueil p {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .site__main {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #CB997E;
+    border-radius: 5px;
+    box-shadow: #39443e 1px -1px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .description__accueil {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    background-color: #DDBEA9;
+    border-radius: 5px;
+    box-shadow: #39443e 1px -1px 10px;
+  }
+  .description__accueil h2 {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .description__accueil p {
+    font-size: 1.5rem;
+    padding: 0;
+  }
 }
 
 .site__header {
