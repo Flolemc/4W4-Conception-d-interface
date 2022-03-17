@@ -347,15 +347,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #3F4238;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #B98B73;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #6B705C;
 }
 
 a:focus {
@@ -367,15 +367,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #724b4b;
+  color: #B98B73;
 }
 
 .site__footer a:visited {
-  color: #a06464;
+  color: #D4C7B0;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #ffbdbd;
+  color: #3F4238;
 }
 
 .site__footer a:focus {
@@ -387,15 +387,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f68383;
+  color: #DDBEA9;
 }
 
 .header__titre a:visited {
-  color: #ff7070;
+  color: #CB997E;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #ffc2c2;
+  color: #A5A58D;
 }
 
 .header__titre a:focus {
@@ -407,21 +407,21 @@ a:hover, a:active {
 }
 
 .formation {
-  background-color: #eca7a7;
-  color: #443936;
-  box-shadow: 3px 3px 5px #594036;
+  background-color: #CB997E;
+  color: #3F4238;
+  box-shadow: 3px 3px 5px #3F4238;
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
-  color: #443936;
-  box-shadow: 3px 3px 5px #594036;
+  background-color: #DDBEA9;
+  color: #3F4238;
+  box-shadow: 3px 3px 5px #3F4238;
 }
 
 .cours {
-  background-color: #ffd6d1;
-  color: #443936;
-  box-shadow: 3px 3px 5px #594036;
+  background-color: #DDBEA9;
+  color: #3F4238;
+  box-shadow: 3px 3px 5px #3F4238;
 }
 
 /* ---------------------------------------------------------
@@ -430,7 +430,7 @@ COMPOSANTES
 .site__main {
   margin-right: 10px;
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #CB997E;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -439,7 +439,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #CB997E;
   border-radius: 5px;
 }
 
@@ -483,7 +483,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #3F4238;
   margin: 5px 0px;
 }
 
@@ -499,7 +499,7 @@ COMPOSANTES
 
 .nouveau__cours {
   padding: 10px 15px;
-  background-color: #ffd6d1;
+  background-color: #DDBEA9;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -507,11 +507,11 @@ COMPOSANTES
 .site__header {
   display: flex;
   align-items: center;
-  background-color: #594036;
-  color: #fa9292;
+  background-color: #3F4238;
+  color: #DDBEA9;
   padding-left: 15px;
   padding-right: 10px;
-  border-bottom: solid 5px #ffd6d1;
+  border-bottom: solid 5px #DDBEA9;
   box-shadow: 3px 0px 5px black;
 }
 
@@ -579,11 +579,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffa3a3;
+  background-color: #B7B7A4;
 }
 
 .site__header__menu__ul a:hover {
-  background-color: #ffd1d1;
+  background-color: #D4C7B0;
 }
 
 @media screen and (min-width: 800px) {
@@ -597,7 +597,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
-  background-color: #2f2a28;
+  background-color: #A5A58D;
   padding: 15px;
 }
 
@@ -616,17 +616,17 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: #724b4b;
+  color: #B98B73;
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: #ffbdbd;
+  color: #3F4238;
 }
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: #D4C7B0;
 }
 
 .cours__contenu {
@@ -634,7 +634,7 @@ COMPOSANTES
 }
 
 .recherche {
-  background-color: #ffa3a3;
+  background-color: #B7B7A4;
   padding: 2px;
   display: flex;
 }
@@ -662,10 +662,10 @@ ANIMATION
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 200px;
   height: 100px;
-  border-radius: 20%;
-  background-color: #594036;
+  border-radius: 5%;
+  background-color: #3F4238;
   box-shadow: 3px 3px 5px black;
   color: #fff;
   font-size: 3rem;
@@ -674,26 +674,86 @@ ANIMATION
 .animation__bloc:nth-child(1) {
   animation: anim-entete 1s forwards;
   animation-delay: 0s;
+  transition: 0.5s;
+}
+
+.animation__bloc:nth-child(1):hover {
+  background-color: #DDBEA9;
+  flex-grow: 0.5;
+  border-radius: 10%;
+}
+
+.animation__bloc:nth-child(1):hover::after {
+  content: "Programmation";
+  font-size: 2rem;
 }
 
 .animation__bloc:nth-child(2) {
   animation: anim-entete 1s forwards;
   animation-delay: 0.1s;
+  transition: 0.5s;
+}
+
+.animation__bloc:nth-child(2):hover {
+  background-color: #DDBEA9;
+  flex-grow: 0.5;
+  border-radius: 10%;
+}
+
+.animation__bloc:nth-child(2):hover::after {
+  content: "Vidéo";
+  font-size: 2rem;
 }
 
 .animation__bloc:nth-child(3) {
   animation: anim-entete 1s forwards;
   animation-delay: 0.2s;
+  transition: 0.5s;
+}
+
+.animation__bloc:nth-child(3):hover {
+  background-color: #DDBEA9;
+  flex-grow: 0.5;
+  border-radius: 10%;
+}
+
+.animation__bloc:nth-child(3):hover::after {
+  content: "Imagerie/Design";
+  font-size: 2rem;
 }
 
 .animation__bloc:nth-child(4) {
   animation: anim-entete 1s forwards;
   animation-delay: 0.3s;
+  transition: 0.5s;
+}
+
+.animation__bloc:nth-child(4):hover {
+  background-color: #DDBEA9;
+  flex-grow: 0.5;
+  border-radius: 10%;
+}
+
+.animation__bloc:nth-child(4):hover::after {
+  content: "Jeux vidéo/3D";
+  font-size: 2rem;
 }
 
 .animation__bloc:nth-child(5) {
   animation: anim-entete 1s forwards;
   animation-delay: 0.4s;
+  transition: 0.5s;
+}
+
+.animation__bloc:nth-child(5):hover {
+  background-color: #DDBEA9;
+  flex-grow: 0.5;
+  border-radius: 10%;
+}
+
+.animation__bloc:nth-child(5):hover::after {
+  content: "Web/HTML";
+  font-size: 2rem;
 }
 
 @keyframes anim-entete {
@@ -712,28 +772,28 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #957365;
+  background-color: #B98B73;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #3F4238;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #6B705C;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #CB997E;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #A5A58D;
 }
 
 .site {
