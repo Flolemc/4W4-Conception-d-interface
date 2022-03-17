@@ -497,11 +497,20 @@ COMPOSANTES
   font-size: 1rem;
 }
 
-.nouveau__cours {
+.description__accueil {
+  margin-top: 1rem;
   padding: 10px 15px;
   background-color: #DDBEA9;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
+}
+
+.description__accueil h2 {
+  font-size: 2rem;
+}
+
+.description__accueil p {
+  font-size: 1.5rem;
 }
 
 .site__header {
