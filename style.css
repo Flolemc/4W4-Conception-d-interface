@@ -649,26 +649,33 @@ COMPOSANTES
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
   background-color: #A5A58D;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
+ali
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
 }
 
+ali
 .site__footer__menu__ul .menu-item {
   margin: 10px 5px;
 }
 
+ali
 .site__footer__menu__ul .menu-item a {
   display: flex;
   padding: 3px;
 }
 
+ali
 .site__footer__menu__ul .menu-item a svg {
   color: #B98B73;
 }
 
+ali
 .site__footer__menu__ul .menu-item a:hover svg {
   color: #3F4238;
 }
@@ -680,12 +687,14 @@ COMPOSANTES
 }
 
 .sidebar {
-  width: 30%;
+  width: 30vw;
+  padding: 10px;
 }
 
 .site__footer__colonne {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   font-size: 1rem;
   color: #D4C7B0;
 }
@@ -823,6 +832,24 @@ ANIMATION
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.site__header__menu__ul a {
+  transition: animation 0.5s;
+}
+
+.site__header__menu__ul a:hover {
+  position: relative;
+  animation: anim-liens 0.2s forwards;
+}
+
+@keyframes anim-liens {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
   }
 }
 

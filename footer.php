@@ -5,7 +5,6 @@
             <?php get_sidebar('footer_colonne_1'); ?>
         </section>
         <section class="footer__">
-            <h2>Adresse du Collège</h2>
             <?php get_sidebar('footer_colonne_2'); ?>
         </section>
         <section class="footer__liens">
