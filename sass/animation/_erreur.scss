@@ -1,10 +1,19 @@
 .animation__erreur{
+    margin: 10px auto;
     display: flex;
     justify-content: center;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     .animation__404{
         animation: anim-erreur 1s;
         p{
-            font-size: 5rem;
+            font-size: 6rem;
             margin: 0;
         }
     }
@@ -22,9 +31,9 @@
 
 @keyframes anim-erreur {
     0% {
-        transform: translateX(2000px);
+        transform: scale(0);
     }
     100% {
-        transform: translateX(0);
+        transform: scale(1);
     }
 }

@@ -16,6 +16,9 @@
         <section class="footer__recherche">
             <?php get_sidebar('footer_ligne_1'); ?>
         </section>
+        <section class="footer__adresse">
+            <?php get_sidebar('footer_ligne_2'); ?>
+        </section>
     </div>
 
 <?php 
