@@ -1,4 +1,4 @@
-.recherche {
+.recherche, .cidw_recherche {
     background-color: $color__background-link;
     padding: 2px;
     display: flex;
@@ -12,3 +12,8 @@
       justify-content: center;
     }
   }
+
+.cidw_recherche {
+  display: flex;
+  justify-content: center;
+}

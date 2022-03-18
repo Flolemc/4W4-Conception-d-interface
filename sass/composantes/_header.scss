@@ -11,6 +11,11 @@
     .header__titre {
       font-size: 3em;
       font-family: $font__titre;
+      display: flex;
+      align-items: center;
+      a:nth-child(2){
+        margin-left: 20px;
+      }
     }
     .header__description {
       font-size: 1.5rem;

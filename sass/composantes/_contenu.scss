@@ -6,6 +6,8 @@
     width: 100vw;
 }
 
+//-------------------- category-cours.php
+
 .formation {
     display: flex;
     flex-direction: column;
@@ -70,6 +72,7 @@
     }
 }
 
+//------------------ front-page.php
 .description__accueil {
     display: flex;
     flex-direction: column;
@@ -85,6 +88,23 @@
     }
 }
 
+//----------------- 404.php
+
+.site__main__erreur {
+    background-color: white;
+    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    color: $color__font-main;
+    text-align: center;
+    h1{
+        font-size: 3.5rem;
+        margin-bottom: 0;
+    }
+}
+
+//----------------- Media
 
 @media screen and (min-width : $largeur__media--tablette){
     .site__main {
@@ -114,5 +134,16 @@
             font-size: 1.5rem;
             padding: 0;
         }
+    }
+
+    .site__main__erreur {
+        margin-right: 10px;
+        padding: 10px 15px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }

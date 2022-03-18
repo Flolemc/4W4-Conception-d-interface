@@ -19,8 +19,9 @@
     <h1 class="header__titre">
         <?= get_custom_logo(); ?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">    
-            <?php bloginfo('name'); ?></h1>
+            <?php bloginfo('name'); ?>
         </a>
+    </h1>
     <h2 class="header__description"><?php bloginfo('description'); ?></h2>
     </div>
     <section class="util">
