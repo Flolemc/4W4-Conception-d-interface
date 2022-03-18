@@ -618,6 +618,10 @@ COMPOSANTES
   display: flex;
 }
 
+.util .icone .icone__lien:hover svg {
+  fill: #6B705C;
+}
+
 #burger {
   position: absolute;
   padding: 12px 5px;
