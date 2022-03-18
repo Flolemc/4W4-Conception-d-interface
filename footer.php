@@ -1,5 +1,19 @@
 <footer class="site__footer">
-    <h2 class="footer__titre">Le beau footer</h2>
+    <!----première rangée de colonne---->
+    <div class="site__footer__colonne">
+        <section class="footer__liens">
+            <?php get_sidebar('footer_colonne_1'); ?>
+        </section>
+        <section class="footer__">
+            <h2>Adresse du Collège</h2>
+            <?php get_sidebar('footer_colonne_2'); ?>
+        </section>
+        <section class="footer__liens">
+            <?php get_sidebar('footer_colonne_3'); ?>
+        </section>
+    </div>
+
+    <h2 class="footer__titre">Les cours du TIM</h2>
     <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
     <h3 class="footer__author">Fait par Florence Lemieux Cayer</h3>
 <?php 

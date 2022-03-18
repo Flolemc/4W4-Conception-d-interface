@@ -679,6 +679,17 @@ COMPOSANTES
   color: #D4C7B0;
 }
 
+.sidebar {
+  width: 30%;
+}
+
+.site__footer__colonne {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: #D4C7B0;
+}
+
 .cours__contenu {
   display: flex;
 }
