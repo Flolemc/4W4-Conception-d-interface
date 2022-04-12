@@ -1,19 +1,16 @@
-.recherche, .cidw_recherche {
-    background-color: $color__background-link;
-    padding: 2px;
-    display: flex;
-    &__input {
-      height: 30px;
-    }
-    &__bouton {
-      margin: 1px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.cidw_recherche {
+  .wp-block-search__input {
+      background-color: rgba(#000, .3);
+      &:focus{
+          background-color: rgba(#000, .1);  
+      }
   }
 
-.cidw_recherche {
-  display: flex;
-  justify-content: center;
-}
+  .wp-block-search__button {
+      background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=search&color=999');
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left : 0;
+      width : 30px;
+  }
+} 

@@ -424,6 +424,53 @@ a:hover, a:active {
   box-shadow: 3px 3px 5px #3F4238;
 }
 
+h1 {
+  font-size: clamp(3rem, 4vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 2.5vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1.25rem, 1.5vw, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+p {
+  font-size: clamp(1rem, 1vw, 1.25rem);
+}
+
+h1,
+h2 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+h3,
+h4 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+h5,
+h6 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -446,7 +493,7 @@ COMPOSANTES
 .formation__titre {
   font-size: 2rem;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+  font-family: "Red Hat Mono", monospace;
 }
 
 .formation__liste {
@@ -455,8 +502,10 @@ COMPOSANTES
 }
 
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 97% 3%;
   border-radius: 5px;
-  margin: 10px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -505,6 +554,30 @@ COMPOSANTES
 .cours__contenu img {
   width: 100%;
   height: fit-content;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
 .description__accueil {
@@ -592,7 +665,7 @@ COMPOSANTES
 
 .site__header .header__titre {
   font-size: 3em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+  font-family: "Red Hat Mono", monospace;
   display: flex;
   align-items: center;
 }
@@ -603,7 +676,7 @@ COMPOSANTES
 
 .site__header .header__description {
   font-size: 1.5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .util {
@@ -680,8 +753,26 @@ COMPOSANTES
   }
 }
 
+.menu-categorie_menu-container .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #B7B7A4;
+  list-style-type: none;
+}
+
+.menu-categorie_menu-container .menu .menu-item {
+  padding: 5px;
+}
+
+.menu-categorie_menu-container .menu .menu-item a {
+  font-size: 2rem;
+  color: black;
+}
+
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+  font-family: "Red Hat Mono", monospace;
   background-color: #A5A58D;
   padding: 15px;
   display: flex;
@@ -742,26 +833,20 @@ COMPOSANTES
   display: flex;
 }
 
-.recherche, .cidw_recherche {
-  background-color: #B7B7A4;
-  padding: 2px;
-  display: flex;
+.cidw_recherche .wp-block-search__input {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.recherche__input, .cidw_recherche__input {
-  height: 30px;
+.cidw_recherche .wp-block-search__input:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.recherche__bouton, .cidw_recherche__bouton {
-  margin: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cidw_recherche {
-  display: flex;
-  justify-content: center;
+.cidw_recherche .wp-block-search__button {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=search&color=999");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0;
+  width: 30px;
 }
 
 /* ---------------------------------------------------------
@@ -949,7 +1034,7 @@ theme name: Lab 2 Lemieux Florence
 */
 .site {
   background-color: #B98B73;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .site__header {

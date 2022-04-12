@@ -1,0 +1,17 @@
+.menu-categorie_menu-container {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background-color: $color__background-link;
+        list-style-type: none;
+      .menu-item {
+          padding: 5px;
+           a{
+            font-size: 2rem;
+            color : black;
+           } 
+        }
+      }
+    }
