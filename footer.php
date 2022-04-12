@@ -1,37 +1,25 @@
 <footer class="site__footer">
-    <!----première rangée de colonne---->
-    <div class="site__footer__colonne">
-        <section class="footer__liens">
-            <?php get_sidebar('footer_colonne_1'); ?>
-        </section>
-        <section class="footer__info">
-            <?php get_sidebar('footer_colonne_2'); ?>
-        </section>
-        <section class="footer__articles">
-            <?php get_sidebar('footer_colonne_3'); ?>
-        </section>
-    </div>
+<div class="site__footer__colonne">
+    <section class="site__footer__colonne__adresse"><?php get_sidebar('footer_colonne_1'); ?></section>
+    <section class="site__footer__colonne__article"><?php get_sidebar('footer_colonne_2'); ?></section>
+    <section class="site__footer__colonne__lien"><?php get_sidebar('footer_colonne_3'); ?></section>
+</div>
 
-    <div class="site__footer__ligne">
-        <section class="footer__recherche">
-            <?php get_sidebar('footer_ligne_1'); ?>
-        </section>
-        <section class="footer__adresse">
-            <?php get_sidebar('footer_ligne_2'); ?>
-        </section>
-    </div>
-
-<?php 
-
-$icone = '<svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#f00"><path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg> ';
-wp_nav_menu(array(
-                    "menu"=>"simple",
-                    "container"=>"nav",
-                    "container_class"=>"site__footer__menu",
-                    "menu_class"=>"site__footer__menu__ul",
-                    "link_before"=>$icone)); ?>
-</footer>
+<div class="site__footer__rangee">
+    <section class="site__footer__rangee__desc">
+        <h1 class="site__footer__rangee__desc__titre">4w4 Conception d'interface et développement web</h1>
+    </section>
+    <section class="site__footer__rangee__recherche"><?php get_search_form(); ?></section>
+    <?php
+            wp_nav_menu(array(  "menu" => "Footer",
+                                "container" => "nav",
+                                "container_class" => "site__footer__rangee__menu",
+                                "menu_class" => "menu_footer")); 
+    ?>
+    <section class="site__footer__rangee__sociaux"><?php get_sidebar('footer_ligne_1'); ?></section>
+    <section class="site__footer__rangee__droits">&copy; Collège de Maisonneuve - Tous droits réservés</section>
+    <section class="site__footer__rangee__auteur">Thème réalisé par Florence Lemieux Cayer</section>
+</div>
 
 </body>
-<?php wp_footer(); ?>
 </html>

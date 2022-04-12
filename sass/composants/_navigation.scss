@@ -1,0 +1,49 @@
+nav.menu-principal-container {
+    @include theme_clair();
+    padding: 15px;
+    background-color: $clr-fond__nav;
+    font-size: 1.5em;
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translateX(-100vw);
+    transition: transform .5s ease-in-out;
+
+    @media screen and (min-width: $largeur__media-tablette) {
+        width: 30vw;
+    }
+
+    ul.menu {
+        list-style: none;
+        
+        li.menu-item {
+            margin: 0;
+
+            a {
+                padding: 5px;
+                text-decoration: none;
+                @include hover-ombre__rapide;
+            }
+        }
+    }
+}
+
+.site__main div ul{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+    background-color: $accents;
+    list-style-type: none;
+
+    li:hover a {
+        color: $foncer;
+    }
+}
+
+
+.site__main div h2 {
+    font-size: 2.5rem;
+}

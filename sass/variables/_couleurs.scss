@@ -1,28 +1,58 @@
-/* ---------------- BACKGROUND */
-$color__background-body : #B98B73;
-$color__background-main : #CB997E;
-$color__background-cours : #DDBEA9;
-$color__background-header : #3F4238;
-$color__background-barre : #6B705C;
-$color__background-footer : #A5A58D;
-$color__background-link : #B7B7A4;
-$color__background-link-hover : #D4C7B0;
+$foncer: rgb(60, 82, 59);
+$clair: rgb(132, 173, 148);
+$textes-liens:rgb(110, 84, 72);
+$accents: rgb(235, 235, 235);
 
-/* ---------------- LIENS */
-$color__link : #3F4238;
-$color__link-hover : #6B705C;
-$color__link-visited : #B98B73;
-/* ---------------- LIENS FOOTER */
-$color__link__footer : #B98B73;
-$color__link__footer-hover : #3F4238;
-$color__link__footer-visited : #D4C7B0;
-/* ---------------- LIENS HEADER */
-$color__link__header : #DDBEA9;
-$color__link__header-hover : #A5A58D;
-$color__link__header-visited : #CB997E;
+$ombre-petite: 2.5px 2.5px 5px rgba(0, 0, 0, .5);
 
-/* ---------------- FONT */
-$color__font-header : #DDBEA9;
-$color__font-main :#3F4238;
-$color__font-barre : rgb(255, 255, 255);
-$color__font-footer : #D4C7B0;
+/* --- Éléments principaux --- */
+/* Site */
+$clr-fond__select: $accents;
+$clr-text__select: $clair;
+
+/* Header */
+$clr-fond__hdr: $foncer;
+$clr-titre__hdr: $accents;
+$clr-texte__hdr: $clair;
+
+$clr-lien__hdr: $accents;
+$clr-lien-hover__hdr: $clair;
+$clr-lien-visite__hdr: $accents;
+
+/* Footer */
+$clr-fond__ftr: $foncer;
+$clr-texte__ftr: $clair;
+$clr-titre__ftr: $accents;
+$clr-lien__ftr: $clair;
+$clr-lien-visite__ftr: $textes-liens;
+$clr-lien-hover__ftr: $accents;
+
+$clr-fond__ftr-cln: $clair;
+$clr-texte__ftr-cln: $foncer;
+$clr-titre__ftr-cln: $accents;
+$clr-lien__ftr-cln: $foncer;
+$clr-lien-visite__ftr-cln: $textes-liens;
+$clr-lien-hover__ftr-cln: $accents;
+
+/* Navigation */
+$clr-fond__nav: $clair;
+$clr-lien__nav: $foncer;
+$clr-lien-visite__nav: $textes-liens;
+$clr-lien-hover__nav: $accents;
+
+/* Main */
+$clr-fond__main: $clair;
+$clr-texte__main: $foncer;
+$clr-titre__main: $foncer;
+$clr-lien__main: $foncer;
+$clr-lien-visite__main: $textes-liens;
+$clr-lien-hover__main: $accents;
+
+/* --- Éléments de contenu --- */
+/* Carte */
+$clr-fond__crt: $clair;
+$clr-texte__crt: $foncer;
+$clr-titre__crt: $foncer;
+$clr-lien__crt: $foncer;
+$clr-lien-visite__crt: $textes-liens;
+$clr-lien-hover__crt: $accents;

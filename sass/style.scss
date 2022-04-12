@@ -1,51 +1,50 @@
-/*
-theme name: Ex2 : Florence Lemieux Cayer
+/**
+Theme name: EX3 Florence Lemieux Cayer
 Author: Florence Lemieux Cayer
 Author URI: 
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
-Version: 1.0.0
+Description: Exercice 3 : Conception interface Web
+Version: 1.0
+Requires PHP: 7.0
 License: GNU General Public License v2 or later
-License URI: LICENSE
 Text Domain: cidw-4w4
-
 */
-/* ---------------------------------------------------------
-VARIABLES
---------------------------------------------------------- */
-@import "variables/couleurs";
-@import "variables/typo";
-@import "variables/structure";
 
-/* ---------------------------------------------------------
-INITIALISATION
---------------------------------------------------------- */
+/* ===== INITIALISATION ===== */
 @import "initialisation/normalize";
-@import "initialisation/box-sizing";
+@import "initialisation/boxsize";
 
-/* ---------------------------------------------------------
-ÉLÉMENTS
---------------------------------------------------------- */
-@import "elements/links";
+/* ===== VARIABLES ===== */
+@import "variables/couleurs";
+@import "variables/structure";
+@import "variables/fonts";
+@import "variables/animations";
+
+/* ===== ELEMENTS ===== */
+@import "elements/liens";
+@import "elements/boutons";
+@import "elements/etiquettes";
+@import "elements/filtres";
 @import "elements/balises";
+@import "elements/menu";
 
-/* ---------------------------------------------------------
-COMPOSANTES
---------------------------------------------------------- */
-@import "composantes/contenu";
-@import "composantes/header";
-@import "composantes/navigation";
-@import "composantes/navigation_accueil";
-@import "composantes/navigation_categorie_cours";
-@import "composantes/footer";
-@import "composantes/sigle_cours";
-@import "composantes/recherche";
-/* ---------------------------------------------------------
-ANIMATION
---------------------------------------------------------- */
-@import "animation/entete";
-@import "animation/menu";
-@import "animation/erreur";
-/* ---------------------------------------------------------
-LAYOUT
---------------------------------------------------------- */
-@import "layout/layout";
+@import "elements/themes";
+
+/* ===== LAYOUT ===== */
+@import "layout/_layout";
+
+/* ===== COMPOSANTS ===== */
+@import "composants/cours";
+@import "composants/header";
+@import "composants/footer"; 
+@import "composants/navigation";
+@import "composants/barre";
+@import "composants/404";
+@import "composants/single-post";
+@import "composants/recherche";
+@import "composants/search";
+@import "composants/navigation_accueil";
+
+/* ===== GLOBAL ===== */ 
+body {
+    font-family: Helvetica, sans-serif;;
+}
