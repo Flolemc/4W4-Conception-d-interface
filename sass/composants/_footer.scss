@@ -1,9 +1,5 @@
 .site__footer {
     @include theme_sombre;
-    
-    ul {
-        list-style-type: none;
-    }
 
     & > * {
         display: flex;
@@ -19,6 +15,7 @@
         flex-direction: row;
 
         a {
+            font-size: 1rem;
             @include lien(	
                 $foncer, 
                 $accents, 

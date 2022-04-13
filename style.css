@@ -457,19 +457,19 @@ html {
 }
 
 h1 {
-  font-family: "Indie Flower", cursive;
+  font-family: "Palatino";
   font-size: clamp(0.8rem, 8vw, 10rem);
 }
 
 h2,
 h3 {
-  font-family: "Red Hat Mono", monospace;
+  font-family: "Georgia";
 }
 
 h4,
 h5,
 h6 {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Garamond";
 }
 
 /* ===== LAYOUT ===== */
@@ -780,6 +780,7 @@ h6 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid white;
   padding: 2rem;
 }
 
@@ -954,10 +955,6 @@ h6 {
   color: #84ad94;
 }
 
-.site__footer ul {
-  list-style-type: none;
-}
-
 .site__footer > * {
   display: flex;
 }
@@ -973,6 +970,7 @@ h6 {
 }
 
 .site__footer__colonne a {
+  font-size: 1rem;
   display: inline-block;
   text-decoration: none;
   padding: 10px;
@@ -1212,12 +1210,18 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 .site__main div ul {
   display: flex;
   font-size: 2rem;
-  justify-content: space-around;
-  background-color: #ebebeb;
   list-style-type: none;
+  padding: 10px;
 }
 
-.site__main div ul li:hover a {
+.site__main div li {
+  background-color: #ebebeb;
+  margin: 5px;
+  border: solid 2px #6e5448;
+  box-shadow: 1px 1px 5px #233b2c;
+}
+
+.site__main div li:hover a {
   color: #3c523b;
 }
 

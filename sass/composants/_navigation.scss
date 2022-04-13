@@ -31,13 +31,21 @@ nav.menu-principal-container {
     }
 }
 
-.site__main div ul{
-    display: flex;
-    font-size: 2rem;
-    justify-content: space-around;
-    background-color: $accents;
-    list-style-type: none;
+.site__main div{
 
+    ul {
+        display: flex;
+        font-size: 2rem;
+        list-style-type: none;
+        padding: 10px;
+    }
+
+    li {
+        background-color: $accents;
+        margin: 5px;
+        border: solid 2px $textes-liens;
+        box-shadow: 1px 1px 5px rgb(35, 59, 44);
+    }
     li:hover a {
         color: $foncer;
     }
