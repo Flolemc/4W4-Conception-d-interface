@@ -1,6 +1,6 @@
 .site__footer {
     @include theme_sombre;
-
+    width: 100%;
     & > * {
         display: flex;
 
@@ -13,6 +13,7 @@
     &__colonne {
         justify-content: space-between;
         flex-direction: row;
+        flex-wrap: wrap;
 
         a {
             font-size: 1rem;

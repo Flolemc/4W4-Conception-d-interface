@@ -35,6 +35,7 @@ nav.menu-principal-container {
 
     ul {
         display: flex;
+        flex-wrap: wrap;
         font-size: 2rem;
         list-style-type: none;
         padding: 10px;
@@ -42,6 +43,7 @@ nav.menu-principal-container {
 
     li {
         background-color: $accents;
+        flex-shrink: 3;
         margin: 5px;
         border: solid 2px $textes-liens;
         box-shadow: 1px 1px 5px rgb(35, 59, 44);

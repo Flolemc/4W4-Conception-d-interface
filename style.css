@@ -489,7 +489,8 @@ h6 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .site__main h1 {
@@ -777,11 +778,12 @@ h6 {
   background-color: #3c523b;
   color: #84ad94;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   border-bottom: 2px solid white;
   padding: 2rem;
+  width: 100%;
 }
 
 .site__header h1 {
@@ -831,7 +833,6 @@ h6 {
 .site__header__titre {
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
 }
 
 .site__header__titre h1, .site__header__titre h2 {
@@ -917,6 +918,7 @@ h6 {
 .site__footer {
   background-color: #3c523b;
   color: #84ad94;
+  width: 100%;
 }
 
 .site__footer h1 {
@@ -967,6 +969,7 @@ h6 {
 .site__footer__colonne {
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .site__footer__colonne a {
@@ -1209,6 +1212,7 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 
 .site__main div ul {
   display: flex;
+  flex-wrap: wrap;
   font-size: 2rem;
   list-style-type: none;
   padding: 10px;
@@ -1216,6 +1220,7 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 
 .site__main div li {
   background-color: #ebebeb;
+  flex-shrink: 3;
   margin: 5px;
   border: solid 2px #6e5448;
   box-shadow: 1px 1px 5px #233b2c;
