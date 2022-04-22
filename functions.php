@@ -14,10 +14,10 @@ function cidw_4w4_enqueue(){
                     false);
 
     wp_enqueue_script('cidw-4w4-js-modal',
-                     get_template_directory_uri() . '/js/boite_modal.js',
+                     get_template_directory_uri() . '/js/boite_modale.js',
                      array(), 
                      '1.0.0', 
-                     filemtime(get_template_directory_uri() . '/js/boite_modal.js'), 
+                     filemtime(get_template_directory_uri() . '/js/boite_modale.js'), 
                      true);
 }
 

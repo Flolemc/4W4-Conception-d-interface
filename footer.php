@@ -1,7 +1,10 @@
 <footer class="site__footer">
 
-<div class="modal">
-    Ceci est un test de modal le fonctionnement d'une boite de dialogue
+<div class="boite__modale">
+    <button class="boite__modale__ferme">X</button>
+    <article class="boite__modale__text">
+        Ceci est un test de modal le fonctionnement d'une boite de dialogue
+    </article>
 </div>
 
 <div class="site__footer__colonne">
