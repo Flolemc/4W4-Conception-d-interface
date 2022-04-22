@@ -1,12 +1,3 @@
-<?php
-/**
-* Template Name: evenement
-*
-* @package WordPress
-* @subpackage cidw-4w4
-*/
-?>
-
 <?php /* Template Name: Évenement */ ?>
 <?php get_header() ?>
 <main class="site__main">
@@ -30,6 +21,3 @@
      <?php endif ?>
 </main>
 <?php get_footer() ?>
-
-
-
