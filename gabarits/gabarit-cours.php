@@ -3,7 +3,7 @@
         <?php while (have_posts()): the_post(); ?>
             <?php 
                 $categorie = get_the_category(); 
-                $descCours = wp_trim_words(get_the_content(), 15, '<button class="cours__desc__suite" href="#"> La suite...</button>');
+                $descCours = get_the_content();
             ?>
 
             <article class="carte">
@@ -21,7 +21,10 @@
                     </a>
                 </h3>
                 <p class="carte__desc">
-                    <?= $descCours; ?>
+                    <?= wp_trim_words($descCours, 15, '<button class="cours__desc__suite" href="#"> La suite...</button>'); ?>
+                </p>
+                <p class="carte__desc__full">
+                    <?= $descCours ?>
                 </p>
                 <div class="carte__miniature">
                     <?php the_post_thumbnail(); ?>

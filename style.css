@@ -1136,6 +1136,10 @@ h6 {
   list-style-type: none;
 }
 
+.carte__desc__full {
+  display: none;
+}
+
 nav.menu-principal-container {
   background-color: #84ad94;
   color: #3c523b;
@@ -1289,7 +1293,7 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 }
 
 .boite__modale {
-  position: absolute;
+  position: fixed;
   width: 50%;
   height: 50%;
   background: rgba(0, 0, 0, 0.5);
@@ -1299,11 +1303,10 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   top: 25%;
   left: 25%;
   z-index: 100;
-  transition: 0.5s ease-out;
+  transform: scale(0);
 }
 
 .boite__modale:hover {
-  transform: translateY(-10px);
   box-shadow: 0px 0px 10px grey;
 }
 
@@ -1316,6 +1319,24 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 .boite__modale__texte {
   padding: 10px;
   font-size: 1.5rem;
+}
+
+.boite__modale__ouvrir {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 10px solid #3f5041;
+  background-color: #8baf91;
+  color: black;
+  top: 25%;
+  left: 25%;
+  z-index: 100;
+  transform: scale(1);
+}
+
+.boite__modale__ouvrir:hover {
+  box-shadow: 0px 0px 10px grey;
 }
 
 .erreur-404 h1 {
