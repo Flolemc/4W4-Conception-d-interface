@@ -1,4 +1,9 @@
 <footer class="site__footer">
+
+<div class="modal">
+    Ceci est un test de modal le fonctionnement d'une boite de dialogue
+</div>
+
 <div class="site__footer__colonne">
     <section class="site__footer__colonne__adresse"><?php get_sidebar('footer_colonne_1'); ?></section>
     <section class="site__footer__colonne__article"><?php get_sidebar('footer_colonne_2'); ?></section>
