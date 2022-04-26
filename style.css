@@ -779,6 +779,18 @@ h6 {
   object-fit: cover;
 }
 
+.cours__desc__suite {
+  background-color: #84ad94;
+  border: none;
+  color: #3c523b;
+  margin-left: 2px;
+  font-weight: bold;
+}
+
+.cours__desc__suite:hover {
+  background-color: white;
+}
+
 .site__header {
   background-color: #3c523b;
   color: #84ad94;
@@ -1299,10 +1311,10 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   flex-direction: column;
   width: 50%;
   height: 50%;
-  background: rgba(0, 0, 0, 0.5);
-  border: 10px solid #3f5041;
-  background-color: #8baf91;
-  color: black;
+  background: rgba(255, 255, 255, 0.5);
+  border: 10px solid white;
+  background-color: white;
+  color: white;
   top: 25%;
   left: 25%;
   z-index: 100;
