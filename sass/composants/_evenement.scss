@@ -1,0 +1,26 @@
+.evenement__titre {
+    margin: 20px;
+    text-align: center;
+}
+
+.evenement__img {
+    img {
+        border: solid 2px $foncer;
+        width: 500px;
+        height: auto;
+    }
+}
+
+.evenement__info {
+    align-self: center;
+    padding: 50px;
+    background-color: $accents;
+    width: 95%;
+    height:fit-content;
+    border-radius: 10%;
+    margin: 10px;
+    box-shadow: 0px 0px 10px $foncer;
+    p {
+        font-size: 1.5rem;
+    }
+}
