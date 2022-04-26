@@ -5,6 +5,11 @@
 
     &__filtre {
         display: flex;
+        flex-direction: column;
+
+        &__tri {
+            font-size: 1.5rem;
+        }
 
         .menu-categorie-cours-container {
             .menu {

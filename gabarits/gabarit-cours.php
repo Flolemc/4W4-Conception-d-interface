@@ -3,7 +3,8 @@
         <?php while (have_posts()): the_post(); ?>
             <?php 
                 $categorie = get_the_category(); 
-                $descCours = get_the_content();
+                $descCours = preg_replace('/(<img [^>]*>)/', '', get_the_content());
+                $descCours = apply_filters('the_content', $descCours);
             ?>
 
             <article class="carte">
@@ -23,11 +24,11 @@
                 <p class="carte__desc">
                     <?= wp_trim_words($descCours, 15, '<button class="cours__desc__suite" href="#"> La suite...</button>'); ?>
                 </p>
-                <p class="carte__desc__full">
-                    <?= $descCours ?>
-                </p>
                 <div class="carte__miniature">
                     <?php the_post_thumbnail(); ?>
+                </div>
+                <div class="carte__desc__full">
+                    <?= $descCours ?>
                 </div>
             </article>
             

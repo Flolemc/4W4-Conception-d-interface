@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /**
-Theme name: EX3 Florence Lemieux Cayer
+Theme name: EX4 Florence Lemieux Cayer
 Author: Florence Lemieux Cayer
-Author URI: 
-Description: Exercice 3 : Conception interface Web
+Author URI: https://github.com/Flolemc?tab=repositories
+Description: Exercice 4 : Conception interface Web
 Version: 1.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -564,6 +564,11 @@ h6 {
 
 .cours__filtre {
   display: flex;
+  flex-direction: column;
+}
+
+.cours__filtre__tri {
+  font-size: 1.5rem;
 }
 
 .cours__filtre .menu-categorie-cours-container .menu {
@@ -1136,10 +1141,6 @@ h6 {
   list-style-type: none;
 }
 
-.carte__desc__full {
-  display: none;
-}
-
 nav.menu-principal-container {
   background-color: #84ad94;
   color: #3c523b;
@@ -1294,6 +1295,8 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 
 .boite__modale {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 50%;
   background: rgba(0, 0, 0, 0.5);
@@ -1304,6 +1307,7 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   left: 25%;
   z-index: 100;
   transform: scale(0);
+  transition: all 1s ease-in-out;
 }
 
 .boite__modale:hover {
@@ -1313,11 +1317,20 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 .boite__modale__ferme {
   width: 25px;
   height: 25px;
-  padding: 0;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #3c523b;
+  color: #ebebeb;
 }
 
-.boite__modale__texte {
-  padding: 10px;
+.boite__modale__ferme:hover {
+  scale: 1.1;
+  background-color: #ebebeb;
+  color: #3c523b;
+}
+
+.boite__modale__texte p {
+  padding: 5px;
   font-size: 1.5rem;
 }
 
@@ -1337,6 +1350,14 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
 
 .boite__modale__ouvrir:hover {
   box-shadow: 0px 0px 10px grey;
+}
+
+.carte__desc__full {
+  display: none;
+}
+
+.carte__desc__full figure {
+  display: none !important;
 }
 
 .erreur-404 h1 {
