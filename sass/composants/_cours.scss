@@ -73,6 +73,13 @@
                     );
                 }
 
+                .carte__etiquettes {
+                    &__duree__contenu, 
+                    &__sigle__contenu {
+                        background-color: $accents;
+                        color: $foncer;
+                    }
+                }
             }
         
             &__titre {
@@ -91,7 +98,8 @@
         
             &__etiquettes {
                 display: flex;
-                gap: 15px;
+                flex-direction: column;
+                gap: 10px;
 
                 &__sigle,
                 &__duree {
@@ -101,10 +109,14 @@
                         $clr-fond__crt
                     );
                 }
+
+                &__sigle__contenu {
+                    font-size: 0.9rem;
+                }
             }
             
             &__miniature {
-                @include filtre($clr-lien-hover__crt);
+                @include filtre($clr-lien-visite__crt);
                 height: 10rem;
                 border-radius: 5px;
                 border: 2px solid $clr-texte__crt;

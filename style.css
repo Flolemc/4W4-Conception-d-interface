@@ -726,6 +726,11 @@ h6 {
   box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.cours__conteneur .carte:hover .carte__etiquettes__duree__contenu, .cours__conteneur .carte:hover .carte__etiquettes__sigle__contenu {
+  background-color: #ebebeb;
+  color: #3c523b;
+}
+
 .cours__conteneur .carte__titre {
   padding: .5rem;
   width: 100%;
@@ -742,7 +747,8 @@ h6 {
 
 .cours__conteneur .carte__etiquettes {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .cours__conteneur .carte__etiquettes__sigle, .cours__conteneur .carte__etiquettes__duree {
@@ -761,8 +767,12 @@ h6 {
   box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.cours__conteneur .carte__etiquettes__sigle__contenu {
+  font-size: 0.9rem;
+}
+
 .cours__conteneur .carte__miniature {
-  background-color: #ebebeb;
+  background-color: #6e5448;
   height: 10rem;
   border-radius: 5px;
   border: 2px solid #3c523b;
