@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /**
-Theme name: EX4 Florence Lemieux Cayer
+Theme name: Lab9 Florence Lemieux Cayer
 Author: Florence Lemieux Cayer
 Author URI: https://github.com/Flolemc?tab=repositories
-Description: Exercice 4 : Conception interface Web
+Description: Lab9
 Version: 1.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -1555,6 +1555,27 @@ form.recherche__bouton {
 
 .home__menu .menu .menu-item {
   width: 100%;
+}
+
+/*
+Galerie gutenberg de la page d'accueil
+*/
+.galerie {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .galerie {
+    width: 75%;
+  }
+}
+
+.home .site__main {
+  align-items: center;
+}
+
+.home .site__main .titre__accueil__departement, .home .site__main .titre__accueil__evenements {
+  align-self: flex-start;
 }
 
 /* ===== GLOBAL ===== */
