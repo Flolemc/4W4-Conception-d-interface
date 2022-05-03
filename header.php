@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les cours du TIM</title>
     <?php wp_head(); ?>
+    <style>
+        .site__footer {
+            background-color:<?= get_theme_mod('couleur_background_footer'); ?>
+        }
+        .site__header {
+            background-color:<?= get_theme_mod('couleur_background_body'); ?>
+        }
+    </style>
     <?php show_admin_bar(true); ?>
 </head>
 <body  <?php body_class("site"); ?>    >
-<header class="site__header"  style="background-color:<?= get_theme_mod('couleur_background_body'); ?>;">
+<header class="site__header">
         <?php the_custom_logo(); ?>
         <section class="site__header__titre">
             <a href="<?= esc_url(home_url('/')); ?>">
