@@ -45,8 +45,10 @@
         </section>
     </header>
     <aside class="site__barre">
-        <label class="burger__etiquette" for="site__barre__menu-principal-container-checkbox">
-            <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        <label for="site__barre__menu-principal-container-checkbox" id="burger" class="burger__etiquette">
+            <div class="burger__ligne"></div>
+            <div class="burger__ligne"></div>
+            <div class="burger__ligne"></div>
         </label>
         <input class="burger__checkbox" type="checkbox" id="site__barre__menu-principal-container-checkbox">
         <?php 

@@ -25,6 +25,6 @@
         Ceci est un test de modal le fonctionnement d'une boite de dialogue
     </article>
 </div>
-<?php wp_footer() ?>
+<?php wp_footer(); ?>
 </body>
 </html>
