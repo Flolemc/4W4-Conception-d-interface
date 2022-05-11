@@ -1367,7 +1367,7 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   transition: transform .5s ease-in-out;
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -1384,11 +1384,11 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   transition: all 1s ease-in-out;
 }
 
-.boite__modale:hover {
+.boite__modale:hover, .boite__carrousel:hover {
   box-shadow: 0px 0px 10px grey;
 }
 
-.boite__modale__ferme {
+.boite__modale__ferme, .boite__carrousel__ferme {
   width: 25px;
   height: 25px;
   margin: 5px;
@@ -1397,18 +1397,18 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   color: #ebebeb;
 }
 
-.boite__modale__ferme:hover {
+.boite__modale__ferme:hover, .boite__carrousel__ferme:hover {
   scale: 1.1;
   background-color: #ebebeb;
   color: #3c523b;
 }
 
-.boite__modale__texte p {
+.boite__modale__texte p, .boite__carrousel__texte p {
   padding: 5px;
   font-size: 1.5rem;
 }
 
-.boite__modale__ouvrir {
+.boite__modale__ouvrir, .boite__carrousel__ouvrir {
   position: fixed;
   width: 50%;
   height: 50%;
@@ -1422,7 +1422,7 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   transform: scale(1);
 }
 
-.boite__modale__ouvrir:hover {
+.boite__modale__ouvrir:hover, .boite__carrousel__ouvrir:hover {
   box-shadow: 0px 0px 10px grey;
 }
 
@@ -1430,8 +1430,47 @@ nav.menu-principal-container ul.menu li.menu-item a:hover {
   display: none;
 }
 
-.carte__desc__full figure {
-  display: none !important;
+.boite__modale {
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+.boite__carrousel {
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1ps solid red;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
 }
 
 .erreur-404 h1 {

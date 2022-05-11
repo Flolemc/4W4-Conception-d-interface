@@ -1,31 +1,38 @@
-(function () {
-    
-    console.log('boite_modale.js');
-    let boite__modale = document.querySelector('.boite__modale');
-    let boite__modale__text = document.querySelector('.boite__modale__text');
+(function(){
 
-    let galerie_img = document.querySelectorAll('.galerie img');
-    console.log (galerie_img.length)
-
+    console.log('vive le carrousel')
+    let boite__carrousel = document.querySelector('.boite__carrousel')
+    let boite__carrousel__ferme = document.querySelector('.boite__carrousel__ferme')
+    let boite__carrousel__navigation = document.querySelector('.boite__carrousel__navigation')
+    let galerie__img = document.querySelectorAll('.galerie img')
+    console.log( galerie__img.length)
     /* Création d'un élément img */
-    let elmImg = document.createElement('img');
-    boite__modale__text.appendChild(elmImg);
+     let elmImg  = document.createElement('img')
+    /* Dans l'article de la boîte modale on ajoute la balise img */
+    boite__carrousel.append(elmImg)
+    /* on parcour chacune des img de la galerie */
+    let index = 0
+    for (const img of galerie__img) {
+        let bouton = document.createElement('button')
+        bouton.dataset.index = index++
+        boite__carrousel__navigation.append(bouton)
 
-    for (const bouton of galerie_img) {
         bouton.addEventListener('mousedown', function(){
+            elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'))
+        })
+
+        img.addEventListener('mousedown', function(){
             console.log(this.tagName)
-            boite__modale.classList.add('boite__modale__ouvrir')
-            console.log(this.getAttribute('src'));
+            boite__carrousel.classList.add('boite__carrousel__ouvrir')
+            console.log(this.getAttribute('src'))
             elmImg.setAttribute('src', this.getAttribute('src'))
-            
         })
     }
 
-    let boite__modale__btn__fermer = document.querySelectorAll('.boite__modale__ferme');
-    for (const bouton of boite__modale__btn__fermer) {
-        bouton.addEventListener('mousedown', function(){
-            console.log(this.tagName)
-            boite__modale.classList.remove('boite__modale__ouvrir')
-        })
-    }
-})()
+    boite__carrousel__ferme.addEventListener('mousedown', function(){
+        boite__carrousel.classList.remove('boite__carrousel__ouvrir')
+    })
+
+
+
+})() 
