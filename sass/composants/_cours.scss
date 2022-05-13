@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding : 0;
 
     &__filtre {
         display: flex;
@@ -74,6 +75,7 @@
                 }
 
                 .carte__etiquettes {
+
                     &__duree__contenu, 
                     &__sigle__contenu {
                         background-color: $accents;
@@ -112,6 +114,7 @@
 
                 &__sigle__contenu {
                     font-size: 0.9rem;
+                    text-overflow: none;
                 }
             }
             

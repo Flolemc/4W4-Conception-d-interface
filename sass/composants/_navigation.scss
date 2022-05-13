@@ -51,6 +51,13 @@ nav.menu-principal-container {
     li:hover a {
         color: $foncer;
     }
+    
+    li a:after{
+        &:nth-child(1){
+            content: '';
+            background-image: url(https://s2.svgbox.net/materialui.svg?ic=class);
+        }
+    }
 }
 
 
