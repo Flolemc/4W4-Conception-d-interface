@@ -9,3 +9,61 @@
         }
     }
 }
+
+.titre__accueil__ateliers {
+
+    .ateliers__menu {
+        .menu {
+            .menu-item {
+                width: 23%;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .menu-item:hover {
+                
+            }
+
+            .icone__html {
+                .menu-item-icone{
+                    margin:auto;
+                    margin-top: 1rem;
+                    width: 5rem;
+                    height: 5rem;
+                    background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+                }
+            }
+
+            .icone__git {
+                .menu-item-icone{
+                    margin:auto;
+                    margin-top: 3rem;
+                    width: 5rem;
+                    height: 5rem;
+                    background-image: url('https://s2.svgbox.net/files.svg?ic=git');
+                }
+            }
+
+            .icone__react {
+                .menu-item-icone{
+                    margin:auto;
+                    margin-top: 3rem;
+                    width: 5rem;
+                    height: 5rem;
+                    background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+                }
+            }
+
+            .icone__css {
+                .menu-item-icone{
+                    margin:auto;
+                    margin-top: 1rem;
+                    width: 5rem;
+                    height: 5rem;
+                    background-image: url('https://s2.svgbox.net/files.svg?ic=css');
+                }
+            }
+        }
+    }
+}
