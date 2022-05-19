@@ -23,6 +23,17 @@
     ?>
     </div>
 
+    <div class="titre__accueil__ateliers">
+    <h2>Ateliers</h2>
+    <?php
+        wp_nav_menu(array(
+            "menu" => "ateliers",
+            "container" => "nav",
+            "container_class" => "ateliers__menu"
+        ));
+    ?>
+    </div>
+
     <?php if (have_posts()): the_post();?>
         <h2><?php the_title()?></h2>
         <?php the_content()?>
