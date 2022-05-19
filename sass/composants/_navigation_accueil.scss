@@ -15,20 +15,35 @@
     .ateliers__menu {
         .menu {
             .menu-item {
-                width: 23%;
-                height: 300px;
+                width: 24%;
+                height: 350px;
                 display: flex;
                 flex-direction: column;
+                animation: glisser-arrivee__hdr 3s forwards ease-in;
+                a {
+                    border: none;
+                }
             }
 
-            .menu-item:hover {
-                
+            li:hover {
+                background-color: $foncer;
+
+                a{
+                    color: $clair;
+                }
+                .menu-item-icone{
+                    transform: scale(1.2);
+                }
+            }
+
+            .menu-item-icone {
+                transition: transform 0.5s;
             }
 
             .icone__html {
                 .menu-item-icone{
                     margin:auto;
-                    margin-top: 1rem;
+                    margin-top: 2rem;
                     width: 5rem;
                     height: 5rem;
                     background-image: url('https://s2.svgbox.net/files.svg?ic=html');
@@ -38,7 +53,7 @@
             .icone__git {
                 .menu-item-icone{
                     margin:auto;
-                    margin-top: 3rem;
+                    margin-top: 4rem;
                     width: 5rem;
                     height: 5rem;
                     background-image: url('https://s2.svgbox.net/files.svg?ic=git');
@@ -48,7 +63,7 @@
             .icone__react {
                 .menu-item-icone{
                     margin:auto;
-                    margin-top: 3rem;
+                    margin-top: 4rem;
                     width: 5rem;
                     height: 5rem;
                     background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');

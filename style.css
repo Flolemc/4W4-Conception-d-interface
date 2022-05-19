@@ -1584,15 +1584,36 @@ form.recherche__bouton {
 }
 
 .titre__accueil__ateliers .ateliers__menu .menu .menu-item {
-  width: 23%;
-  height: 300px;
+  width: 24%;
+  height: 350px;
   display: flex;
   flex-direction: column;
+  animation: glisser-arrivee__hdr 3s forwards ease-in;
+}
+
+.titre__accueil__ateliers .ateliers__menu .menu .menu-item a {
+  border: none;
+}
+
+.titre__accueil__ateliers .ateliers__menu .menu li:hover {
+  background-color: #0b0014;
+}
+
+.titre__accueil__ateliers .ateliers__menu .menu li:hover a {
+  color: #e3b5a4;
+}
+
+.titre__accueil__ateliers .ateliers__menu .menu li:hover .menu-item-icone {
+  transform: scale(1.2);
+}
+
+.titre__accueil__ateliers .ateliers__menu .menu .menu-item-icone {
+  transition: transform 0.5s;
 }
 
 .titre__accueil__ateliers .ateliers__menu .menu .icone__html .menu-item-icone {
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 5rem;
   height: 5rem;
   background-image: url("https://s2.svgbox.net/files.svg?ic=html");
@@ -1600,7 +1621,7 @@ form.recherche__bouton {
 
 .titre__accueil__ateliers .ateliers__menu .menu .icone__git .menu-item-icone {
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 4rem;
   width: 5rem;
   height: 5rem;
   background-image: url("https://s2.svgbox.net/files.svg?ic=git");
@@ -1608,7 +1629,7 @@ form.recherche__bouton {
 
 .titre__accueil__ateliers .ateliers__menu .menu .icone__react .menu-item-icone {
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 4rem;
   width: 5rem;
   height: 5rem;
   background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
